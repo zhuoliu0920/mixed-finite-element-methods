@@ -1,0 +1,1712 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%DocumentNeededResources: font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Helvetica-Oblique
+%%+ font Helvetica-BoldOblique
+%%+ font Symbol
+%%Title: R Graphics Output
+%%Creator: R Software
+%%Pages: (atend)
+%%BoundingBox: 0 0 503 504
+%%EndComments
+%%BeginProlog
+/bp  { gs sRGB gs } def
+% begin .ps.prolog
+/gs  { gsave } bind def
+/gr  { grestore } bind def
+/ep  { showpage gr gr } bind def
+/m   { moveto } bind def
+/l  { rlineto } bind def
+/np  { newpath } bind def
+/cp  { closepath } bind def
+/f   { fill } bind def
+/o   { stroke } bind def
+/c   { newpath 0 360 arc } bind def
+/r   { 4 2 roll moveto 1 copy 3 -1 roll exch 0 exch rlineto 0 rlineto -1 mul 0 exch rlineto closepath } bind def
+/p1  { stroke } bind def
+/p2  { gsave bg fill grestore newpath } bind def
+/p3  { gsave bg fill grestore stroke } bind def
+/p6  { gsave bg eofill grestore newpath } bind def
+/p7  { gsave bg eofill grestore stroke } bind def
+/t   { 5 -2 roll moveto gsave rotate
+       1 index stringwidth pop
+       mul neg 0 rmoveto show grestore } bind def
+/ta  { 4 -2 roll moveto gsave rotate show } bind def
+/tb  { 2 -1 roll 0 rmoveto show } bind def
+/cl  { grestore gsave newpath 3 index 3 index moveto 1 index
+       4 -1 roll lineto  exch 1 index lineto lineto
+       closepath clip newpath } bind def
+/rgb { setrgbcolor } bind def
+/s   { scalefont setfont } bind def
+% end   .ps.prolog
+/sRGB { [ /CIEBasedABC
+          << /DecodeLMN
+               [ { dup 0.03928 le
+                        {12.92321 div}
+                        {0.055 add 1.055 div 2.4 exp }
+                     ifelse
+                 } bind dup dup
+               ]
+             /MatrixLMN [0.412457 0.212673 0.019334
+                         0.357576 0.715152 0.119192
+                         0.180437 0.072175 0.950301]
+             /WhitePoint [0.9505 1.0 1.0890]
+           >>
+         ] setcolorspace } bind def
+/srgb { setcolor } bind def
+%%IncludeResource: font Helvetica
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font1 exch definefont pop
+%%IncludeResource: font Helvetica-Bold
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font2 exch definefont pop
+%%IncludeResource: font Helvetica-Oblique
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font3 exch definefont pop
+%%IncludeResource: font Helvetica-BoldOblique
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+  end
+/Font4 exch definefont pop
+%%IncludeResource: font Symbol
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  currentdict
+  end
+/Font5 exch definefont pop
+%%EndProlog
+%%Page: 1 1
+bp
+59.04 73.44 473.17 444.46 cl
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+94.34 87.18 m
+0 343.54 l
+343.54 0 l
+0 -343.54 l
+-343.54 0 l
+o
+0.00 0.00 503.41 503.50 cl
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+94.34 73.44 m
+343.54 0 l
+o
+np
+94.34 73.44 m
+0 -7.20 l
+o
+np
+180.22 73.44 m
+0 -7.20 l
+o
+np
+266.11 73.44 m
+0 -7.20 l
+o
+np
+351.99 73.44 m
+0 -7.20 l
+o
+np
+437.88 73.44 m
+0 -7.20 l
+o
+/Font1 findfont 12 s
+94.34 47.52 (-100) .5 0 t
+180.22 47.52 (-50) .5 0 t
+266.11 47.52 (0) .5 0 t
+351.99 47.52 (50) .5 0 t
+437.88 47.52 (100) .5 0 t
+np
+59.04 87.18 m
+0 343.54 l
+o
+np
+59.04 87.18 m
+-7.20 0 l
+o
+np
+59.04 173.07 m
+-7.20 0 l
+o
+np
+59.04 258.95 m
+-7.20 0 l
+o
+np
+59.04 344.84 m
+-7.20 0 l
+o
+np
+59.04 430.72 m
+-7.20 0 l
+o
+41.76 87.18 (-100) .5 90 t
+41.76 173.07 (-50) .5 90 t
+41.76 258.95 (0) .5 90 t
+41.76 344.84 (50) .5 90 t
+41.76 430.72 (100) .5 90 t
+np
+59.04 73.44 m
+414.13 0 l
+0 371.02 l
+-414.13 0 l
+0 -371.02 l
+o
+0.00 0.00 503.41 503.50 cl
+/Font1 findfont 12 s
+0 0 0 srgb
+266.11 18.72 (x) .5 0 t
+12.96 258.95 (y) .5 90 t
+59.04 73.44 473.17 444.46 cl
+/bg { 0 0 0 srgb } def
+114.70 261.62 2.70 c p2
+333.30 281.67 2.70 c p2
+267.05 327.18 2.70 c p2
+266.34 143.56 2.70 c p2
+96.07 279.76 2.70 c p2
+278.28 99.47 2.70 c p2
+275.67 320.06 2.70 c p2
+324.39 259.47 2.70 c p2
+267.09 369.69 2.70 c p2
+203.06 259.35 2.70 c p2
+95.37 261.48 2.70 c p2
+280.26 378.67 2.70 c p2
+267.48 285.31 2.70 c p2
+153.43 260.91 2.70 c p2
+269.94 420.85 2.70 c p2
+267.82 210.35 2.70 c p2
+395.18 263.54 2.70 c p2
+207.59 270.50 2.70 c p2
+269.31 240.11 2.70 c p2
+125.80 315.89 2.70 c p2
+100.47 259.69 2.70 c p2
+294.32 223.07 2.70 c p2
+267.67 244.34 2.70 c p2
+433.59 381.89 2.70 c p2
+323.15 282.15 2.70 c p2
+301.27 266.55 2.70 c p2
+335.12 326.59 2.70 c p2
+266.75 331.24 2.70 c p2
+188.65 259.48 2.70 c p2
+388.09 261.35 2.70 c p2
+399.31 265.52 2.70 c p2
+266.14 251.37 2.70 c p2
+103.39 267.16 2.70 c p2
+267.14 196.43 2.70 c p2
+143.23 259.24 2.70 c p2
+405.48 303.93 2.70 c p2
+269.24 321.01 2.70 c p2
+277.59 259.68 2.70 c p2
+266.95 332.43 2.70 c p2
+277.98 204.55 2.70 c p2
+266.77 196.76 2.70 c p2
+268.34 426.64 2.70 c p2
+266.42 256.34 2.70 c p2
+270.86 352.00 2.70 c p2
+363.29 260.80 2.70 c p2
+345.28 334.77 2.70 c p2
+188.03 260.47 2.70 c p2
+400.54 282.48 2.70 c p2
+291.56 94.64 2.70 c p2
+266.75 419.26 2.70 c p2
+267.19 181.42 2.70 c p2
+269.51 335.18 2.70 c p2
+417.85 345.93 2.70 c p2
+182.00 258.95 2.70 c p2
+275.27 385.05 2.70 c p2
+303.70 268.36 2.70 c p2
+276.00 428.70 2.70 c p2
+250.87 259.27 2.70 c p2
+225.35 260.32 2.70 c p2
+328.74 399.10 2.70 c p2
+372.08 107.02 2.70 c p2
+106.09 270.33 2.70 c p2
+402.68 260.41 2.70 c p2
+230.57 259.90 2.70 c p2
+266.73 310.86 2.70 c p2
+269.75 155.99 2.70 c p2
+270.05 346.94 2.70 c p2
+383.24 342.67 2.70 c p2
+335.17 303.82 2.70 c p2
+266.32 232.46 2.70 c p2
+266.25 179.57 2.70 c p2
+174.07 259.58 2.70 c p2
+329.89 283.76 2.70 c p2
+288.36 266.63 2.70 c p2
+418.06 261.39 2.70 c p2
+355.61 271.03 2.70 c p2
+277.51 341.76 2.70 c p2
+395.36 263.35 2.70 c p2
+367.65 269.44 2.70 c p2
+266.91 175.81 2.70 c p2
+333.14 261.53 2.70 c p2
+184.47 261.72 2.70 c p2
+280.59 164.91 2.70 c p2
+266.15 185.94 2.70 c p2
+269.27 351.02 2.70 c p2
+325.54 275.01 2.70 c p2
+331.43 259.37 2.70 c p2
+272.32 421.06 2.70 c p2
+282.37 351.34 2.70 c p2
+296.18 178.52 2.70 c p2
+197.93 259.14 2.70 c p2
+378.71 259.53 2.70 c p2
+97.38 388.05 2.70 c p2
+435.11 293.19 2.70 c p2
+266.60 203.93 2.70 c p2
+240.27 275.49 2.70 c p2
+268.83 409.89 2.70 c p2
+419.64 321.68 2.70 c p2
+277.87 181.42 2.70 c p2
+266.93 369.93 2.70 c p2
+0 0 0 srgb
+0.75 setlinewidth
+[] 0 setdash
+1 setlinecap
+1 setlinejoin
+10.00 setmiterlimit
+np
+333.92 87.18 m
+-7.32 47.60 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+437.88 188.50 m
+0 0 l
+o
+np
+437.88 337.60 m
+0 0 l
+o
+np
+362.35 430.72 m
+0 0 l
+o
+np
+181.61 430.72 m
+0 0 l
+o
+np
+94.34 324.80 m
+0 0 l
+o
+np
+104.19 87.18 m
+0 0 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+281.33 87.18 m
+14.82 40.78 l
+o
+np
+272.74 425.57 m
+-1.39 5.15 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+177.59 430.72 m
+0 0 l
+o
+np
+94.34 333.94 m
+0 0 l
+o
+np
+94.34 270.68 m
+0.56 -0.02 l
+o
+np
+382.08 396.09 m
+5.69 34.63 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+301.22 411.84 m
+10.59 18.88 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+231.51 430.72 m
+35.32 -7.61 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+183.51 395.85 m
+-6.43 34.87 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+415.62 178.08 m
+22.26 -6.63 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+420.00 280.82 m
+17.88 -9.59 l
+o
+np
+183.51 395.85 m
+87.24 19.38 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+183.75 393.92 m
+-0.24 1.93 l
+o
+np
+183.75 393.92 m
+63.03 -3.00 l
+o
+np
+182.24 379.79 m
+1.51 14.13 l
+o
+np
+193.20 351.18 m
+-10.96 28.61 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+94.34 345.17 m
+87.90 34.62 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+397.54 376.24 m
+-15.46 19.85 l
+o
+np
+357.29 372.14 m
+24.79 23.95 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+299.16 406.56 m
+2.06 5.28 l
+o
+np
+272.74 425.57 m
+28.48 -13.73 l
+o
+np
+298.77 404.40 m
+0.39 2.16 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+271.65 415.14 m
+27.51 -8.58 l
+o
+np
+300.10 399.32 m
+-1.33 5.08 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+246.78 390.92 m
+51.99 13.48 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+270.84 424.22 m
+1.90 1.35 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+313.51 367.50 m
+-13.41 31.82 l
+o
+np
+271.73 377.15 m
+28.37 22.17 l
+o
+np
+271.65 415.14 m
+-0.81 9.08 l
+o
+np
+266.83 423.11 m
+4.01 1.11 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+193.20 351.18 m
+57.18 7.10 l
+o
+np
+193.22 351.08 m
+-0.02 0.10 l
+o
+np
+193.22 351.08 m
+52.86 -6.60 l
+o
+np
+193.99 344.51 m
+-0.77 6.57 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+270.75 415.23 m
+-3.92 7.88 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+270.75 415.23 m
+0.90 -0.09 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+246.78 390.92 m
+24.95 -13.77 l
+o
+np
+193.99 344.51 m
+77.16 -13.43 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+194.19 342.73 m
+-0.20 1.78 l
+o
+np
+194.19 342.73 m
+18.10 -17.63 l
+o
+np
+178.01 313.59 m
+16.18 29.14 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+397.54 376.24 m
+40.34 -17.65 l
+o
+np
+401.65 332.54 m
+-4.11 43.70 l
+o
+np
+370.34 309.52 m
+-13.05 62.62 l
+o
+np
+318.89 362.27 m
+38.40 9.87 l
+o
+np
+422.56 304.82 m
+15.32 8.32 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+437.88 349.17 m
+0 0 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+401.65 332.54 m
+36.23 2.67 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+313.51 367.50 m
+5.38 -5.23 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+280.00 364.91 m
+33.51 2.59 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+317.87 358.41 m
+1.02 3.86 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+94.34 311.49 m
+23.13 -19.04 l
+o
+np
+352.63 315.24 m
+-34.76 43.17 l
+o
+np
+306.08 333.29 m
+11.79 25.12 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+273.56 374.35 m
+-1.83 2.80 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+280.00 364.91 m
+-6.44 9.44 l
+o
+np
+250.38 358.28 m
+23.18 16.07 l
+o
+np
+212.29 325.10 m
+60.87 4.58 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+216.68 320.49 m
+-4.39 4.61 l
+o
+np
+277.24 362.61 m
+2.76 2.30 l
+o
+np
+250.38 358.28 m
+14.46 1.69 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+276.43 348.52 m
+0.81 14.09 l
+o
+np
+264.84 359.97 m
+12.40 2.64 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+216.68 320.49 m
+0.99 -0.51 l
+o
+np
+223.28 277.27 m
+-6.60 43.22 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+271.42 349.32 m
+-6.58 10.65 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+217.67 319.98 m
+36.84 -0.72 l
+o
+np
+217.67 319.98 m
+30.03 -22.46 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+246.08 344.48 m
+25.34 4.84 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+246.08 344.48 m
+13.88 -2.97 l
+o
+np
+191.87 277.08 m
+-13.86 36.51 l
+o
+np
+170.13 305.04 m
+7.88 8.55 l
+o
+np
+304.83 328.52 m
+1.25 4.77 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+276.52 348.29 m
+29.56 -15.00 l
+o
+np
+306.29 315.15 m
+-1.46 13.37 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+279.97 330.63 m
+24.86 -2.11 l
+o
+np
+276.52 348.29 m
+-0.09 0.23 l
+o
+np
+271.42 349.32 m
+5.01 -0.80 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+271.44 340.98 m
+5.08 7.31 l
+o
+np
+397.29 324.99 m
+4.36 7.55 l
+o
+np
+259.96 341.51 m
+11.48 -0.53 l
+o
+np
+259.96 341.51 m
+11.19 -10.43 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+178.46 264.59 m
+-8.33 40.45 l
+o
+np
+166.42 301.87 m
+3.71 3.17 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+397.29 324.99 m
+25.27 -20.17 l
+o
+np
+370.34 309.52 m
+26.95 15.47 l
+o
+np
+279.97 330.63 m
+-8.53 10.35 l
+o
+np
+306.29 315.15 m
+46.34 0.09 l
+o
+np
+304.04 306.91 m
+2.25 8.24 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+370.31 309.46 m
+0.03 0.06 l
+o
+np
+370.32 304.50 m
+-0.01 4.96 l
+o
+np
+352.63 315.24 m
+17.68 -5.78 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+159.40 192.32 m
+7.02 109.55 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+143.40 290.30 m
+23.02 11.57 l
+o
+np
+275.71 328.89 m
+4.26 1.74 l
+o
+np
+374.68 299.72 m
+-4.36 4.78 l
+o
+np
+365.55 299.99 m
+4.77 4.51 l
+o
+np
+304.04 306.91 m
+19.31 -10.70 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+297.13 298.25 m
+6.91 8.66 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+273.24 325.90 m
+2.47 2.99 l
+o
+np
+273.16 329.68 m
+2.55 -0.79 l
+o
+np
+271.15 331.08 m
+2.01 -1.40 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+254.51 319.26 m
+18.73 6.64 l
+o
+np
+254.51 319.26 m
+17.13 -4.23 l
+o
+np
+271.64 315.03 m
+1.60 10.87 l
+o
+np
+374.68 299.72 m
+42.49 -9.77 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+383.08 278.54 m
+-8.40 21.18 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+361.24 267.26 m
+4.31 32.73 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+351.58 291.29 m
+13.97 8.70 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+313.61 275.00 m
+-16.48 23.25 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+295.09 297.14 m
+2.04 1.11 l
+o
+np
+293.15 292.99 m
+1.94 4.15 l
+o
+np
+288.46 298.71 m
+6.63 -1.57 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+247.70 297.52 m
+40.76 1.19 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+271.64 315.03 m
+16.82 -16.32 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+417.17 289.95 m
+5.39 14.87 l
+o
+np
+159.40 192.32 m
+-16.00 97.98 l
+o
+np
+131.15 286.53 m
+12.25 3.77 l
+o
+np
+256.09 274.26 m
+-8.39 23.26 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+294.88 277.70 m
+-1.73 15.29 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+276.06 273.88 m
+17.09 19.11 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+117.47 292.45 m
+13.68 -5.92 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+99.41 273.27 m
+18.06 19.18 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+131.13 286.46 m
+0.02 0.07 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+120.84 162.74 m
+10.29 123.72 l
+o
+np
+109.29 264.89 m
+21.84 21.57 l
+o
+np
+342.16 271.53 m
+9.42 19.76 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+337.56 292.47 m
+14.02 -1.18 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+323.35 296.21 m
+14.21 -3.74 l
+o
+np
+327.33 279.58 m
+-3.98 16.63 l
+o
+np
+420.00 280.82 m
+-2.83 9.13 l
+o
+np
+329.13 278.68 m
+8.43 13.79 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+410.84 273.21 m
+9.16 7.61 l
+o
+np
+383.08 278.54 m
+4.38 -2.58 l
+o
+np
+380.93 273.13 m
+2.15 5.41 l
+o
+np
+223.28 277.27 m
+5.61 -5.51 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+214.14 261.34 m
+9.14 15.93 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+194.58 271.78 m
+-2.71 5.30 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+185.33 258.48 m
+6.54 18.60 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+387.46 275.96 m
+5.00 -1.42 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+392.19 260.66 m
+-4.73 15.30 l
+o
+np
+310.77 256.29 m
+-15.89 21.41 l
+o
+np
+294.69 245.30 m
+0.19 32.40 l
+o
+np
+256.09 274.26 m
+5.04 -3.22 l
+o
+np
+240.87 264.30 m
+15.22 9.96 l
+o
+np
+294.50 245.28 m
+-18.44 28.60 l
+o
+np
+268.19 270.78 m
+7.87 3.10 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+409.87 268.82 m
+0.97 4.39 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+392.46 274.54 m
+18.38 -1.33 l
+o
+np
+313.61 275.00 m
+13.72 4.58 l
+o
+np
+315.77 267.91 m
+-2.16 7.09 l
+o
+np
+392.38 214.27 m
+-11.45 58.86 l
+o
+np
+371.17 262.25 m
+9.76 10.88 l
+o
+np
+261.13 271.04 m
+7.06 -0.26 l
+o
+np
+257.99 254.33 m
+3.14 16.71 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+397.01 265.02 m
+-4.55 9.52 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+273.37 253.45 m
+-5.18 17.33 l
+o
+np
+348.13 257.41 m
+-5.97 14.12 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+335.21 271.59 m
+6.95 -0.06 l
+o
+np
+194.58 271.78 m
+5.60 -4.76 l
+o
+np
+193.43 263.14 m
+1.15 8.64 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+327.33 279.58 m
+1.80 -0.90 l
+o
+np
+335.21 271.59 m
+-6.08 7.09 l
+o
+np
+228.89 271.76 m
+11.98 -7.46 l
+o
+np
+224.50 216.56 m
+4.39 55.20 l
+o
+np
+327.21 267.07 m
+8.00 4.52 l
+o
+np
+99.41 273.27 m
+9.88 -8.38 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+94.90 270.66 m
+4.51 2.61 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+315.77 267.91 m
+11.44 -0.84 l
+o
+np
+310.77 256.29 m
+5.00 11.62 l
+o
+np
+415.62 178.08 m
+-5.75 90.74 l
+o
+np
+398.90 261.58 m
+10.97 7.24 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+99.29 264.46 m
+-4.39 6.20 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+94.34 250.39 m
+4.95 14.07 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+106.11 87.18 m
+0 0 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+239.96 235.13 m
+0.91 29.17 l
+o
+np
+200.18 267.02 m
+13.96 -5.68 l
+o
+np
+203.07 195.64 m
+-2.89 71.38 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+327.98 263.85 m
+-0.77 3.22 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+361.24 267.26 m
+9.93 -5.01 l
+o
+np
+348.13 257.41 m
+13.11 9.85 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+347.90 248.14 m
+0.23 9.27 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+216.34 210.44 m
+-2.20 50.90 l
+o
+np
+178.46 264.59 m
+6.87 -6.11 l
+o
+np
+170.32 162.16 m
+8.14 102.43 l
+o
+np
+107.51 261.25 m
+1.78 3.64 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+306.81 243.37 m
+3.96 12.92 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+365.26 190.68 m
+5.91 71.57 l
+o
+np
+327.98 263.85 m
+19.92 -15.71 l
+o
+np
+327.44 226.33 m
+0.54 37.52 l
+o
+np
+99.29 264.46 m
+8.22 -3.21 l
+o
+np
+190.80 189.75 m
+2.63 73.39 l
+o
+np
+185.41 258.15 m
+8.02 4.99 l
+o
+np
+120.84 162.74 m
+-13.33 98.51 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+349.92 203.34 m
+-2.02 44.80 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+294.69 245.30 m
+12.12 -1.93 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+294.50 245.28 m
+0.19 0.02 l
+o
+np
+289.63 243.05 m
+4.87 2.23 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+398.90 261.58 m
+-1.89 3.44 l
+o
+np
+392.19 260.66 m
+4.82 4.36 l
+o
+np
+306.81 243.37 m
+20.63 -17.04 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+394.77 251.27 m
+4.13 10.31 l
+o
+np
+394.77 251.27 m
+-2.58 9.39 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+281.39 230.96 m
+8.24 12.09 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+280.53 246.90 m
+9.10 -3.85 l
+o
+np
+392.38 214.27 m
+2.39 37.00 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+257.99 254.33 m
+15.38 -0.88 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+253.09 244.85 m
+4.90 9.48 l
+o
+np
+350.06 203.08 m
+-0.14 0.26 l
+o
+np
+349.92 203.34 m
+-22.48 22.99 l
+o
+np
+350.06 203.08 m
+15.20 -12.40 l
+o
+np
+300.64 201.02 m
+49.42 2.06 l
+o
+np
+185.41 258.15 m
+-0.08 0.33 l
+o
+np
+120.30 111.49 m
+0.54 51.25 l
+o
+np
+190.80 189.75 m
+-5.39 68.40 l
+o
+np
+239.96 235.13 m
+9.20 5.29 l
+o
+np
+227.35 218.70 m
+12.61 16.43 l
+o
+np
+393.55 182.48 m
+-1.17 31.79 l
+o
+np
+393.55 182.48 m
+22.07 -4.40 l
+o
+np
+159.83 153.55 m
+-0.43 38.77 l
+o
+np
+216.34 210.44 m
+6.91 5.06 l
+o
+np
+206.27 198.90 m
+10.07 11.54 l
+o
+np
+120.30 111.49 m
+39.53 42.06 l
+o
+np
+103.28 87.18 m
+17.02 24.31 l
+o
+np
+275.99 249.84 m
+-2.62 3.61 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+372.41 183.40 m
+21.14 -0.92 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+372.41 183.40 m
+-7.15 7.28 l
+o
+np
+159.83 153.55 m
+9.76 7.76 l
+o
+np
+223.25 215.50 m
+1.25 1.06 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+223.25 215.50 m
+48.93 -9.31 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+224.50 216.56 m
+2.85 2.14 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+227.35 218.70 m
+51.10 3.48 l
+o
+np
+260.53 239.13 m
+20.00 7.77 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+275.99 249.84 m
+4.54 -2.94 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+145.47 87.18 m
+150.68 40.78 l
+o
+np
+253.09 244.85 m
+22.90 4.99 l
+o
+np
+326.60 134.78 m
+45.81 48.62 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+169.59 161.31 m
+0.73 0.85 l
+o
+np
+169.59 161.31 m
+3.00 0.01 l
+o
+np
+170.32 162.16 m
+18.25 19.37 l
+o
+np
+190.86 184.17 m
+-0.06 5.58 l
+o
+np
+190.86 184.17 m
+11.66 10.86 l
+o
+np
+188.57 181.53 m
+2.29 2.64 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+206.27 198.90 m
+64.23 1.54 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+203.07 195.64 m
+3.20 3.26 l
+o
+np
+249.16 240.42 m
+3.93 4.43 l
+o
+np
+202.52 195.03 m
+0.55 0.61 l
+o
+np
+249.16 240.42 m
+11.37 -1.29 l
+o
+np
+202.52 195.03 m
+59.82 -3.44 l
+o
+np
+188.57 181.53 m
+73.85 1.17 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+172.59 161.32 m
+98.19 17.10 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+172.59 161.32 m
+56.88 -0.99 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+260.53 239.13 m
+20.86 -8.17 l
+o
+np
+278.45 222.18 m
+2.94 8.78 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+279.76 219.45 m
+-1.31 2.73 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+279.76 219.45 m
+20.88 -18.43 l
+o
+np
+272.18 206.19 m
+7.58 13.26 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+289.08 192.93 m
+11.56 8.09 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+272.49 200.58 m
+-0.31 5.61 l
+o
+np
+286.13 174.31 m
+2.95 18.62 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+278.18 192.98 m
+10.90 -0.05 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+278.18 192.98 m
+-5.69 7.60 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+270.50 200.44 m
+1.99 0.14 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+262.34 191.59 m
+8.16 8.85 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+274.61 190.43 m
+3.57 2.55 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+229.47 160.33 m
+40.96 5.87 l
+o
+np
+229.47 160.33 m
+59.12 -16.18 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+272.53 185.03 m
+2.08 5.40 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+262.34 191.59 m
+12.27 -1.16 l
+o
+np
+272.53 178.33 m
+0 6.70 l
+o
+np
+262.42 182.70 m
+10.11 2.33 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+320.32 135.12 m
+6.28 -0.34 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+262.42 182.70 m
+8.36 -4.28 l
+o
+np
+320.32 135.12 m
+-34.19 39.19 l
+o
+np
+275.49 172.55 m
+10.64 1.76 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+305.58 132.82 m
+14.74 2.30 l
+o
+np
+275.49 172.55 m
+-2.96 5.78 l
+o
+np
+270.78 178.42 m
+1.75 -0.09 l
+o
+0.75 setlinewidth
+[] 0 setdash
+np
+270.43 166.20 m
+5.06 6.35 l
+o
+np
+288.59 144.15 m
+-18.16 22.05 l
+o
+0.75 setlinewidth
+[ 2.25 3.75] 0 setdash
+np
+296.15 127.96 m
+9.43 4.86 l
+o
+np
+288.59 144.15 m
+16.99 -11.33 l
+o
+ep
+%%Trailer
+%%Pages: 1
+%%EOF

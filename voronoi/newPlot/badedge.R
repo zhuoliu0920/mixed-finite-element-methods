@@ -1,0 +1,6 @@
+setEPS()
+postscript("badedge_reason.eps",width=8, height=4.5)
+par(mfrow = c(1, 2))
+plotvoronoi3()
+plotvoronoi4()
+dev.off()
